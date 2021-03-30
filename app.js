@@ -1,3 +1,4 @@
+// FizzBuzz
 const output = fizzBuzz(30);
 console.log(output);
 
@@ -16,3 +17,23 @@ function fizzBuzz(input) {
     console.log("not a number");
   }
 }
+// FizzBuzz
+
+// Speed
+checkSpeed(71);
+
+function checkSpeed(speed) {
+  const limit = 70;
+  const kmPerPoint = 5;
+  if (speed < limit + kmPerPoint) {
+    console.log("Okay");
+  } else {
+    let points = Math.floor((speed - limit) / kmPerPoint);
+    if (points >= 12) {
+      console.log("License Suspended");
+    } else {
+      console.log("Points", points);
+    }
+  }
+}
+// Speed
